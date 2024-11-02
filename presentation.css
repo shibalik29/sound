@@ -1,0 +1,477 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    background: linear-gradient(to  bottom, #000000,#b1b1b1, #f9f9f9);
+
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family:revamped;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+.menu-button {
+    display: block;
+    background-color: #111;
+    border: none;
+    color: white;font-size: 1em;
+    transition: transform 0.3s ease;
+}
+
+.menu-button:hover {
+    color: #828282;
+    background-color: #111;
+    border: none;
+    font-size: 1em;
+  
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #828282;
+    transform: font-size(1.5); /* Slightly increase size */
+}
+
+.animated-button {
+ 
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Slightly increase size */
+}
+
+
+/* Banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 220px 20px;
+    background-image: url("waves.jpg");
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-image 0.3s ease-in-out,
+    transform 0.4s ease;
+}
+
+
+.banner:hover {
+    background-image: url("front\ waves\ hover.jpg");
+    transform: scale(1.05);
+    z-index: -1;
+    
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card1 {
+    background-image:url("headphones.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+    text-shadow: #333;
+    font-family: Casanova Scotia;
+    color: #ffffff;
+    transition: background-image 0.3s ease-in-out,
+    transform 0.4s ease;; /* Smooth transition */
+
+}
+  /* Change background on hover */
+  .card1:hover {
+    background-image: url("circles.jpg");
+    transform: scale(1.1); /* New background */
+}
+
+.card2 {
+    background-image:url('smartwaatch.png');
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 100px;
+    text-shadow: #333;
+    color: #ffffff;
+    font-family: Casanova Scotia;
+    transition: background-image 0.3s ease-in-out,
+    transform 0.4s ease;
+}
+
+.card2:hover {
+    background-image: url("coal.jpg");
+    transform: scale(1.1);
+}
+
+
+.card3 {
+    background-image:url('access2.jpg');
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+    text-shadow: #333;
+    color: #fcfbfb;
+    font-family: moderna;
+    transition: background-image 0.3s ease-in-out,
+    transform 0.4s ease;
+}
+
+.card3:hover {
+    background-image: url("circles.jpg");
+    transform: scale(1.1);
+}
+
+.card4 {
+    background-image:url('desk-gadgets.jpg');
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 60px;
+    text-shadow: #333;
+    font-family: moderna;
+    color: #ffffff;
+    transition: background-image 0.3s ease-in-out,
+    transform 0.4s ease;
+}
+
+.card4:hover {
+    background-image: url("coal.jpg");
+    transform: scale(1.1);
+}
+
+.card5 {
+    background-image:url('watch1.jpg');
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 100px;
+    text-shadow: #333;
+    font-family: Casanova Scotia;
+    color: #ffffff;
+    transition: background-image 0.3s ease-in-out,
+    transform 0.4s ease;
+}
+
+.card5:hover {
+    background-image: url("watch1\ hoveer.jpg");
+    transform: scale(1.1);
+}
+
+.card6 {
+    background-image:url('headphone1\ norm.jpg');
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 100px;
+    text-shadow: #333;
+    font-family: Casanova Scotia;
+    text-decoration: none;
+    color: #ffffff;
+
+    transition: background-image 0.3s ease-in-out,
+    transform 0.4s ease;
+}
+
+.card6:hover {
+    background-image: url("headphone1.jpg");
+    transform: scale(1.1);
+}
+
+.card7 {
+    background-image:url('watch\ 2.jpg');
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 100px;
+    text-shadow: #333;
+    font-family: Casanova Scotia;
+    color: #ffffff;
+    transition: background-image 0.3s ease-in-out,
+    transform 0.4s ease;
+}
+
+.card7:hover {
+    background-image: url("watch\ 2\ hover.jpg");
+    transform: scale(1.1);
+}
+
+.card8 {
+    background-image:url('headphones2\ norm.jpg');
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 100px;
+    text-shadow: #333;
+    font-family: Casanova Scotia;
+    color: #ffffff;
+    transition: background-image 0.3s ease-in-out,
+    transform 0.4s ease;
+}
+
+.card8:hover {
+    background-image: url("headphones2.jpg");
+    transform: scale(1.1);
+}
+
+.card9 {
+    background-image:url('hearables\ 1.jpg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 32px;
+    padding-top: 50px;
+    text-shadow: #333;
+    font-family: Casanova Scotia;
+    color: #ffffff;
+    transition: transform 0.4s ease;
+}
+
+.card10 {
+    background-image:url('hearables\ 2.jpg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 33px;
+    padding-top: 60px;
+    text-shadow: #333;
+    font-family: Casanova Scotia;
+    color: #ffffff;
+    transition: transform 0.4s ease;
+}
+
+.card11 {
+    background-image:url('hearables\ 3.jpg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 33px;
+    padding-top: 50px;
+    text-shadow: #b4b4b4;
+    font-family: Casanova Scotia;
+    color: #000000;
+    transition: transform 0.4s ease;
+}
+
+.card12 {
+    background-image:url('hearables\ 4.jpg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 33px;
+    padding-top: 80px;
+    text-shadow: #333;
+    color: #ffffff;
+    font-family: Casanova Scotia;
+    transition: transform 0.4s ease;
+}
+
+.card13 {
+    background-image:url('wearables\ 1.jpg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 50px;
+    text-shadow: #333;
+    color: #ffffff;
+    font-family: Casanova Scotia;
+    transition: transform 0.4s ease;
+}
+
+.card14 {
+    background-image:url('wearables\ 2.jpg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 33px;
+    padding-top: 50px;
+    font-family: Casanova Scotia;
+    text-shadow: #333;
+    color: #ffffff;
+    transition: transform 0.4s ease;
+}
+
+.card15 {
+    background-image:url('wearables\ 5.jpg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 50px;
+    text-shadow: #333;
+    font-family: Casanova Scotia;
+    color: #ffffff;
+    transition: transform 0.4s ease;
+}
+
+.card16 {
+    background-image:url('wearables\ 4.jpg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 50px;
+    text-shadow: #333;
+    font-family: Casanova Scotia;
+    color: #ffffff;
+    transition: transform 0.4s ease;
+}
+
+.Explore{
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 30px;
+    text-shadow: #333;
+    color: #000000;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1em;
+}

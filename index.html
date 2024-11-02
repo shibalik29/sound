@@ -1,0 +1,86 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="soundsindex.css">
+<link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="wormhole.mp4" type="video/mp4">
+    </video>
+    <div class="banner"><h1 style="font-family: revamped;">Welcome to the World of Sounds</h1></div>
+    <div class="card1"><fieldset style="border-radius: 15px; padding-bottom: 50px;padding-top: 50px;">
+        
+    <table><tr><td> <!--Table start for dividing the page-->
+            <!--Text on front--> 
+            <p><div class="para">"Sounds" is where technology meets the art of listening. Specializing in innovative audio and smart tech, we bring you products designed for seamless integration into everyday life. Whether its high-fidelity headphones, immersive speakers, or smart home devices, Sounds is committed to elevating your experience with every product. Quality, precision, and cutting-edge design are at the heart of everything we do—so you can stay connected, inspired, and immersed in sound.</div></p>
+        </td>
+        <td><!--Form starting to enter login credentials-->
+
+
+<div class="login-container">
+  <div id="error-message" class="error"></div>
+  <p style="color: white;font-size: 26px;margin-bottom: 30px;margin-right: 100px;">Username:
+</p>
+  <input type="text" id="username" placeholder="Username" 
+  style="height: 38px;
+  width: 300px;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;margin-right: 100px;">
+
+<p style="color: rgb(255, 255, 255);font-size: 26px;margin-bottom: 30px;margin-right: 100px;">Password:
+
+</p>
+  <input type="password" id="password" placeholder="Password"
+  style="height: 38px;
+width: 300px;
+border-radius: 20px;
+font-size: 20px;
+text-align: center;
+margin-bottom: 40px;margin-right: 100px;">
+  <div class="log"> <button onclick="login()" style="height: 38px;
+  width: 100px;font-size: 20px;
+  border-radius: 10px;
+  margin-left: 15px;
+  background-color: black;
+color: rgb(255, 255, 255);">Login</button></div>
+</div>
+
+<script>
+  function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const errorMessage = document.getElementById('error-message');
+
+    // Clear previous error messages
+    errorMessage.textContent = '';
+
+    // Basic validation
+    if (!username || !password) {
+      errorMessage.textContent = 'Please enter both username and password.';
+      return;
+    }
+
+    // Example credentials (for demonstration purposes)
+    const validUsername = 'Shibalik29@sounds.in';
+    const validPassword = 'password';
+
+    // Check if the entered credentials match
+    if (username === validUsername && password === validPassword) {
+      alert('Login successful!');
+      // Redirect to a new page or perform further actions here
+      window.location.href = 'presentation.html';
+    } else {
+      errorMessage.textContent = 'Invalid username or password.';
+    }
+  }
+</script>
+
+</body>
+</html>

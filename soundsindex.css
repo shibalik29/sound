@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* information about body */
+body {
+    color: #333;
+    background-repeat: no-repeat;
+    transition:transform 0.4s ease ;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    z-index: -1; /* Send the video behind the content */
+}
+
+/* Overlay text content */
+.overlay {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+body.hover {
+    transform: scale(1.2);
+
+}
+/* Information about banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+    opacity: 80%;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    transition: opacity 0.3s ease; 
+}
+
+/* information about login page paragraph */
+.para {
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 950px;
+    padding-left: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 30px;
+    padding-top: 35px;
+    padding-right:5px;
+    color: #ffffff;
+    opacity: 0.5;
+    margin-top: 40px;
+    margin-left: 30px;
+    transition: opacity 0.3s ease; 
+}
+
+/* info about login credentials */
+.login-container {
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 420px;
+    margin-left: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    padding-top: 35px;
+    padding-right:5px;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-left: 60px;
+    opacity:60%;
+    transition: opacity 0.3s ease; 
+}
+
+.login-container:hover {
+    opacity: 0.85; 
+    }
+
+.log {
+     transition: transform 0.3s ease;
+    }
+
+.log:hover {
+        scale: 1.08; 
+         }
+
+
+.case1 {
+    background-image:url("headphones.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+    color: #ffffff;
+    opacity: 0.5;
+    transition: opacity 0.3s ease; 
+}
+
+.case1:hover {
+     opacity: 1; 
+      }
